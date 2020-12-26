@@ -7,4 +7,4 @@ services:
       - "6379:6379"
     volumes:
       - $REDIS_PATH/data:/data:rw
-      - $REDIS_PATH/conf/redis.conf:$/etc/redis/redis.conf::ro
+      - $REDIS_PATH/conf/redis.conf:/etc/redis/redis.conf:ro
