@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ik-redis:
+    image: redis:latest
+    env_file: .env
+    ports:
+      - "6379:6379"
+    volumes:
+      - $REDIS_PATH/data:/data:rw
+      - $REDIS_PATH/conf/redis.conf:$/etc/redis/redis.conf::ro
