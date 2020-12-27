@@ -1,6 +1,6 @@
 version: "3"
 services:
-  ik-redis:
+  redis:
     image: redis:latest
     env_file: .env
     ports:
@@ -8,3 +8,13 @@ services:
     volumes:
       - $REDIS_PATH/data:/data:rw
       - $REDIS_PATH/conf/redis.conf:/etc/redis/redis.conf:ro
+  
+  nginx:
+    image: nginx:latest
+    env_file: .env
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $NGINX_PATH:/etc/nginx:rw
+      - $WEBROOT_PATH:/www:rw
