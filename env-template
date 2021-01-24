@@ -4,3 +4,7 @@ REDIS_PATH="/etc/redis"
 # Nginx
 NGINX_PATH="/etc/nginx"
 WEBROOT_PATH="/www"
+
+# pg
+PG_PATH="/etc/postgres"
+POSTGRES_PASSWORD="xxxxxx"

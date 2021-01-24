@@ -29,7 +29,7 @@ services:
        # provide password
        - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
     volumes: 
-      - $PG_PATH/conf/postgresql.conf:etc/postgresql.conf:ro
+      - $PG_PATH/conf/postgresql.conf:/etc/postgresql.conf:ro
       - $PG_PATH/data:/var/lib/postgresql/DATA:rw
       - $PG_PATH/logs:/logs:rw
     command: postgres -c logging_collector=on -c log_destination=stderr -c log_directory=/logs -c config_file=/etc/postgresql.conf
