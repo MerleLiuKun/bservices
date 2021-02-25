@@ -33,3 +33,8 @@ services:
       - $PG_PATH/data:/var/lib/postgresql/DATA:rw
       - $PG_PATH/logs:/logs:rw
     command: postgres -c logging_collector=on -c log_destination=stderr -c log_directory=/logs -c config_file=/etc/postgresql.conf
+  
+  httpbin:
+    image: httpbin:v1
+    ports:
+      - "11010:80"
