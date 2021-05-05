@@ -46,8 +46,7 @@ services:
       - "25565:25565"
       - "25575:25575"
     environment: 
-      # EULA: "TRUE"
-      EULA: "FALSE"
+      EULA: "TRUE"
       TYPE: CUSTOM
       CUSTOM_SERVER: server.jar
       FABRIC_INSTALLER: fabric-installer-0.7.3.jar
