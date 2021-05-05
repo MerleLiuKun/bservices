@@ -8,3 +8,6 @@ WEBROOT_PATH="/www"
 # pg
 PG_PATH="/etc/postgres"
 POSTGRES_PASSWORD="xxxxxx"
+
+# Minecraft
+MC_PATH="/etc/mc"
