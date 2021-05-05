@@ -54,6 +54,5 @@ services:
       DIFFICULTY: hard
       MAX_PLAYERS: 5
       MEMORY: 2G
-      OPS: ikaroskun
     volumes:
       - $MC_PATH:/data
