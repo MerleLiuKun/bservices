@@ -56,3 +56,11 @@ services:
       MEMORY: 2G
     volumes:
       - $MC_PATH:/data
+  
+  jupyter:
+    image: jupyter/base-notebook:python-3.8.8
+    env_file: .env
+    ports:
+      - "11012:8888"
+    volumes:
+      - $JUPYTER_PATH:/home/jovyan

@@ -11,3 +11,6 @@ POSTGRES_PASSWORD="xxxxxx"
 
 # Minecraft
 MC_PATH="/etc/mc"
+
+# Jupyter
+JUPYTER_PATH="/etc/jupyter"
